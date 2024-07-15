@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  vault:
+    image: vault:1.13.3
+    container_name: vault
+    ports:
+      - 8200:8200
+    environment:
+      VAULT_DEV_LISTEN_ADDRESS: http://0.0.0.0:8200
